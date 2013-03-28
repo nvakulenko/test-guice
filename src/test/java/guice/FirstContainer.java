@@ -20,6 +20,9 @@ package guice;
 
 import com.google.inject.Inject;
 
+/**
+ * Test comment
+ */
 public class FirstContainer
 {
    private final SecondResource secondResource;
