@@ -19,37 +19,34 @@
 package guice;
 
 import com.google.inject.Inject;
-import com.google.inject.name.Named;
 
-import javax.annotation.Nullable;
-
-public class PropertyContainer
+public class FirstContainer
 {
-   private final String property1;
+   private final SecondResource secondResource;
 
-   private final String property2;
+   private final FirstResource firstResource;
 
    @Inject
-   public PropertyContainer(@Named("property1") String property1, @Nullable @Named("property2") String property2)
+   public FirstContainer(FirstResource firstResource, SecondResource secondResource)
    {
-      this.property1 = property1;
-      this.property2 = property2;
+      this.firstResource = firstResource;
+      this.secondResource = secondResource;
    }
 
    /**
-    * @return the property1
+    * @return the secondResource
     */
-   public String getProperty1()
+   public SecondResource getSecondResource()
    {
-      return property1;
+      return secondResource;
    }
 
    /**
-    * @return the property2
+    * @return the firstResource
     */
-   public String getProperty2()
+   public FirstResource getFirstResource()
    {
-      return property2;
+      return firstResource;
    }
 
 }

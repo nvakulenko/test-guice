@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.6">
+<file name="/home/sangre/java/test-guice/src/main/java/FirstResource.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/main/java/FirstContainer.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/main/java/PropertyContainer.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/main/java/LifecycleContainer.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/main/java/SecondContainer.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/main/java/SecondResource.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/test/java/guice/TestModule.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/test/java/guice/TestGuice.java">
+</file>
+<file name="/home/sangre/java/test-guice/src/test/java/guice/TestAutobind.java">
+</file>
+</checkstyle>

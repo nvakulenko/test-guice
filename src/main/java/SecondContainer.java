@@ -18,40 +18,29 @@
  */
 package guice;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+import com.google.inject.Inject;
 
-public class LifecycleContainer
+public class SecondContainer
 {
-   private boolean isInit = false;
+   private final FirstResource firstResource;
 
-   private boolean isDestroy = false;
+   private final SecondResource secondResource;
 
-   @PostConstruct
-   public void init()
+   @Inject
+   public SecondContainer(FirstResource firstResource, SecondResource secondResource)
    {
-      isInit = true;
+      this.firstResource = firstResource;
+      this.secondResource = secondResource;
    }
 
-   /**
-    * @return the isInit
-    */
-   public boolean isInit()
+   public FirstResource getFirstResource()
    {
-      return isInit;
+      return firstResource;
    }
 
-   @PreDestroy
-   public void destroy()
+   public SecondResource getSecondResource()
    {
-      isDestroy = true;
+      return secondResource;
    }
 
-   /**
-    * @return the isDestroy
-    */
-   public boolean isDestroy()
-   {
-      return isDestroy;
-   }
 }

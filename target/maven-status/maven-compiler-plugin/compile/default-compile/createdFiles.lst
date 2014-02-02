@@ -1,0 +1,6 @@
+guice/PropertyContainer.class
+guice/FirstContainer.class
+guice/LifecycleContainer.class
+guice/SecondContainer.class
+guice/SecondResource.class
+guice/FirstResource.class
